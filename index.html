@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="style/style.css" rel="stylesheet">
+	<script src="js/script.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div id="container">
+		<div class="form-builder">
+			<div class="builder-block">
+				<h1 class="title">Добавить поля формы</h1>
+				<div class="add-input">
+					<p class="field-name">Input</p>
+					<input type="text" value="Input" disabled>
+					<button onclick="addInput()">+</button>
+				</div>
+				<div class="add-input">
+					<p class="field-name">Textarea</p>
+					<textarea type="textarea" placeholder="Textarea" disabled>Textarea</textarea>
+					<button>+</button>
+				</div>
+				<div class="add-input">
+					<p>Checkbox</p>
+					<label class="checkbox" for="checkboxes-1">
+      					<input type="checkbox" name="checkboxes" id="checkboxes-1" value="1" disabled>
+    				</label>
+    				<button>+</button>
+				</div>
+				<div class="add-input">
+					<p>Radio</p>
+					<label class="radio" for="radio-1">
+      					<input type="radio" name="radio" id="radio-1" value="1" disabled>
+    				</label>
+    				<button>+</button>
+				</div>
+				<div class="add-input">
+					<p>Select</p>
+					<select id="selectbasic" name="selectbasic" class="form-control">
+						<option value="1">Option</option>
+				    </select>
+    				<button onclick="addInput()">+</button>
+				</div>
+				<div class="add-input">
+					<p class="field-name">File</p>
+					<input type="file" value="File" disabled>
+					<button>+</button>
+				</div>
+			</div>
+			<div class="constructor-block">
+				<h1 class="title">Предпросмотр полей формы</h1>
+				<form action="">
+					<div class="form-block">
+						
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>
